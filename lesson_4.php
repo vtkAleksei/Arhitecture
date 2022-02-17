@@ -19,7 +19,6 @@ abstract class DbFactory
         $queryBuiler->anotherUsefulFunctionC($connection);
     }
 }
-
 class MySQLFactory extends DbFactory
 {
     public function createConnection(): Connection
@@ -40,7 +39,6 @@ class MySQLFactory extends DbFactory
         return new MySQLQueryBuiler();
     }
 }
-
 class PostgreSQLFactory extends DbFactory
 {
     public function createConnection(): Connection
@@ -249,8 +247,8 @@ function clientCode(DbFactory $factory)
 echo "Client: Testing client code with the first factory type:\n";
 clientCode(new MySQLFactory());
 
-echo "\n";
 
 echo "Client: Testing the same client code with the second factory type:\n";
 clientCode(new PostgreSQLFactory());
 clientCode(new OracleFactory());
+
