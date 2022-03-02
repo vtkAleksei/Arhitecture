@@ -1,0 +1,19 @@
+Задание 1
+
+Front Controller находится – app/config/routing.php
+
+Основные классы которые с ним взаимодействуют: 
+– MainController
+– ProductController
+– OrderController
+– UserController
+
+
+
+
+
+Задание 2
+
+Паттерн Registry находится – app/ framework/ Registry.php
+
+Используется для получения данных из конфигурационного файла и использования его в рендере страницы по названию роута
